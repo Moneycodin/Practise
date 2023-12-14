@@ -1,0 +1,86 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5a87c971-7376-4c48-a5d1-b8cc55dc7bb5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Constructor\n",
+    "1. what is constructor in python? Explain its purpose and usage.\n",
+    "Constructors are generally used for instantiating an object. The task of constructors is to initialize(assign values) \n",
+    "to the data members of the class when an object of class is created.\n",
+    "In Python the __init__() method is called the constructor and is always called when an object is created.\n",
+    "\n",
+    "\n",
+    "2. Differentiate between a parameterless constructor and a parameterized constructor in Python.\n",
+    " A parameterized constructor is a constructor that takes one or more arguments. It is used to create an object with custom values for its attributes.\n",
+    " Non-Parameterized Constructor: A non-parameterized constructor is a constructor that does not take any arguments.\n",
+    "\n",
+    "3. How do you define a constructor in a Python class? Provide an example.\n",
+    "n Python, a constructor is a special method used to initialize an object when it is created. The constructor method is named __init__ and is \n",
+    "automatically called when an object is instantiated. It allows you to set up initial values for the attributes of the class.\n",
+    "\n",
+    "Here's an example of how to define a constructor in a Python class:\n",
+    "class MyClass:\n",
+    "    def __init__(self, parameter1, parameter2):\n",
+    "        # Initialization code goes here\n",
+    "        self.attribute1 = parameter1\n",
+    "        self.attribute2 = parameter2\n",
+    "\n",
+    "# Creating an instance of the class\n",
+    "my_object = MyClass(\"value1\", \"value2\")\n",
+    "\n",
+    "# Accessing attributes of the object\n",
+    "print(my_object.attribute1)  # Output: value1\n",
+    "print(my_object.attribute2)  # Output: value2\n",
+    "\n",
+    "4. Explain the `__init__` method in Python and its role in constructors.\n",
+    "In Python, __init__ is a special method known as the constructor. It is automatically called when a new instance (object) of a class is created.\n",
+    "The __init__ method allows you to initialize the attributes (variables) of an object.\n",
+    "\n",
+    "5. In a class named `Person`, create a constructor that initializes the `name` and `age` attributes. Provide an\n",
+    "example of creating an object of this class.\n",
+    "class Person:\n",
+    "    def __init__(self, name, age):\n",
+    "        self.name = name\n",
+    "        self.age = age\n",
+    "\n",
+    "# Example of creating an object of the Person class\n",
+    "person1 = Person(name=\"John Doe\", age=25)\n",
+    "\n",
+    "# Accessing attributes of the created object\n",
+    "print(\"Name:\", person1.name)\n",
+    "print(\"Age:\", person1.age)\n",
+    "\n",
+    "\n",
+    "6. How can you call a constructor explicitly in Python? Give an example.\n",
+    "\n",
+    "In Python, you cannot explicitly call a constructor outside of the object creation process using the class name. Constructors are automatically\n",
+    "invoked when you create an object. However, you can use class methods or alternative initialization methods if you want to perform additional setup or customize the object creation process."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
